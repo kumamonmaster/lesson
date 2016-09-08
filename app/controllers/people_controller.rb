@@ -8,10 +8,11 @@ class PeopleController < ApplicationController
   end
 
   def step3
+    flash[:notice] = "step4に移動しました"
     redirect_to '/step4'
   end
 
   def step4
-
+    @message = flash[:notice]
   end
 end
