@@ -3,4 +3,5 @@ Rails.application.routes.draw do
   get '/step2' => 'people#step2'
   get '/step3' => 'people#step3'
   get '/step4' => 'people#step4'
+  get '/step5' => 'people#step5'
 end

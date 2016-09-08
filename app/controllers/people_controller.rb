@@ -1,6 +1,6 @@
 class PeopleController < ApplicationController
 before_action :step0, only: :step1
-  
+
   def step1
     # @person = Person.find(1)
   end
@@ -16,6 +16,10 @@ before_action :step0, only: :step1
 
   def step4
     @message = flash[:notice]
+  end
+
+  def step5
+    @array = [1, 2, 3]
   end
 
   private
