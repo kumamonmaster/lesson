@@ -1,6 +1,8 @@
 class PeopleController < ApplicationController
+before_action :step0, only: :step1
+  
   def step1
-    @person = Person.find(1)
+    # @person = Person.find(1)
   end
 
   def step2
@@ -15,4 +17,9 @@ class PeopleController < ApplicationController
   def step4
     @message = flash[:notice]
   end
+
+  private
+    def step0
+      @person = Person.find(1)
+    end
 end
